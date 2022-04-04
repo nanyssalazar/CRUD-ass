@@ -10,7 +10,7 @@ const app = express();
 const customerRoutes = require("./routes/customer");
 
 //settings
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 3306);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
@@ -20,10 +20,10 @@ app.use(
   myConnection(
     mysql,
     {
-      host: "sql5.freemysqlhosting.net",
-      user: "sql5474504",
-      password: "GZHI5z8wex",
-      database: "sql5474504",
+      host: "db5007094691.hosting-data.io",
+      user: "dbu2427698",
+      password: "iestdev0!",
+      database: "dbs5848722",
     },
     "single"
   )
